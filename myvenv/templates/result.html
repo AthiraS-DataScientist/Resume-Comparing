@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Scanner Result</title>
+</head>
+<body>
+    <h1>Resume Scanner Result</h1>
+    {% if similarity_score %}
+    <p>Resume similarity score: {{ similarity_score }}%</p>
+    {% else %}
+    <p>No analysis results available.</p>
+    {% endif %}
+</body>
+</html>
